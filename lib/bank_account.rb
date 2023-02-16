@@ -9,13 +9,13 @@ class BankAccount
     @balance = balance
   end
 
-  def deposit(amount)
-    @balance += amount
+  def deposit(amounts)
+    @balance += amounts
   end
 
   def withdraw(amount)
-    number = []
-    number << amount
+    number_array = []
+    number_number << amount
     @balance -= number[0]
   end
 
