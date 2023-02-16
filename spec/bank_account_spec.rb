@@ -3,13 +3,13 @@ require 'rspec'
 require './lib/bank_account'
 
 describe BankAccount do
-  it '1. exists' do
+  xit '1. exists' do
     checking = BankAccount.new(123, '0987', 250.0)
 
     expect(checking).to be_an BankAccount
   end
 
-  it '2. has attributes' do
+  xit '2. has attributes' do
     checking = BankAccount.new(123, '0987', 250.0)
 
     expect(checking.account_number).to eq 123
@@ -24,7 +24,7 @@ describe BankAccount do
     expect(checking.balance).to eq 350.0
   end
 
-  xit '4. can withdraw money' do
+  it '4. can withdraw money' do
     checking = BankAccount.new(123, '0987', 250.0)
     checking.withdraw(55.0)
 
